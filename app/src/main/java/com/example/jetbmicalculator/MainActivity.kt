@@ -45,6 +45,15 @@ class MainActivity : ComponentActivity() {
                             label = "身長(cm)",
                             placeholder = "170"
                         )
+                        Spacer(modifier = Modifier.height(20.dp))
+
+                        // 体重
+                        PinkLabeledTextField(
+                            value = "",
+                            onValueChange = {},
+                            label = "体重(kg)",
+                            placeholder = "65"
+                        )
                     }
                 }
             }
