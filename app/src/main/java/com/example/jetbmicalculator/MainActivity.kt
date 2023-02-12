@@ -1,6 +1,7 @@
 package com.example.jetbmicalculator
 
 import android.os.Bundle
+import android.widget.Space
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.*
@@ -54,6 +55,23 @@ class MainActivity : ComponentActivity() {
                             label = "体重(kg)",
                             placeholder = "65"
                         )
+                        Spacer(modifier = Modifier.height(30.dp))
+
+                        // 計算する
+                        Button(
+                            onClick = { /*TODO*/ },
+                            modifier = Modifier.fillMaxWidth(),
+                            colors = ButtonDefaults.buttonColors(
+                                backgroundColor = Color(0xFFF85F6A)
+                            ),
+                        ) {
+                            Text(
+                                text = "計算する",
+                                color = Color.White,
+                                fontSize = 18.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
                     }
                 }
             }
